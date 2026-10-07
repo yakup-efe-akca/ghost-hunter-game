@@ -1,0 +1,53 @@
+maximum_health: 100
+maximum_vacuum: 100
+
+ghost_damage: 10
+ripper_damage: 20
+wisp_damage: 30
+
+ghost_score: 10
+ripper_score: 20
+wisp_score: 30
+
+vacuum_decrease: 15
+vacuum_increase: 5
+
+level_1_playable_area_x: 200
+level_1_playable_area_y: 200
+level_1_playable_area_width: 1150
+level_1_playable_area_height: 600
+level_1_time: 60
+level_1_ghosts: 5
+level_1_rippers: 0
+level_1_wisps: 0
+
+level_2_playable_area_x: 200
+level_2_playable_area_y: 200
+level_2_playable_area_width: 1150
+level_2_playable_area_height: 600
+level_2_time: 120
+level_2_ghosts: 4
+level_2_rippers: 3
+level_2_wisps: 0
+
+level_3_playable_area_x: 200
+level_3_playable_area_y: 200
+level_3_playable_area_width: 1150
+level_3_playable_area_height: 600
+level_3_time: 180
+level_3_ghosts: 4
+level_3_rippers: 3
+level_3_wisps: 2
+
+level_4_playable_area_x: 200
+level_4_playable_area_y: 200
+level_4_playable_area_width: 1150
+level_4_playable_area_height: 600
+level_4_time: 0
+level_4_ghosts: 0
+level_4_rippers: 0
+level_4_wisps: 0
+
+health_token_increase: 20
+vacuum_token_increase: 20
+eye_token_duration: 5
