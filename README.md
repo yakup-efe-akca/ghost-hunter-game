@@ -14,8 +14,12 @@ This project is a 2D grid-based arcade game developed in Java. A level-based arc
      
 * **Arif Erdem Taşgın:** [Onun görevleri, örn: Character movement mechanics and map design]
   
-* **Yavuz Selim Durdubaş:** [Onun görevleri, örn: UI design, vacuum mechanics, and scoring system]
-  
+* **Yavuz Selim Durdubaş:** 
+  * **UI & HUD Implementation:** Developed the `BarsAndTimes` HUD to display and dynamically scale the health and vacuum energy bars.
+  * **Menu & Scene Management:** Built the `MenuManager` to create the Main Menu, Level Selection scenes, and manage stage transitions.
+  * **End-Game Interfaces:** Designed the `EndGamePanels` to display transparent overlays for "Win" and "Game Over" screens alongside the final score.
+  * **Custom UI Components:** Created interactive JavaFX buttons (`MenuButton`, `LoseButton`, `SelectLevelButton`) with custom fonts, graphic-based previews, and hover/click color feedback.
+  * **Level Design:** Designed the visual theme and spatial dimensions for the Level 3 environment.
 
 ## 🚀 Installation and Setup
 
