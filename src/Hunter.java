@@ -20,7 +20,8 @@ public class Hunter {
     private Polygon scannerTriangle;
      
     private boolean isHit=false;
-    
+    private double hitTimer = 0;
+
     public static int score;
     double xCoordinate;
     double yCoordinate;
@@ -142,14 +143,22 @@ public class Hunter {
      * Ensures health does not drop below zero.
      */
 	
-	public void  takeDamage(double damageAmount) {
-		if(this.health-damageAmount>=0) {
-			this.health-=damageAmount;
-		}else {
-			this.health=0;
-		}
-	}
-	
+	public void takeDamage(double damageAmount) {
+        if (damageAmount <= 0 || health <= 0) {
+            return;
+        }
+
+        health = Math.max(0, health - damageAmount);
+        isHit = true;
+        hitTimer = 0.2;
+        updateVisualState();
+    }
+    public void updateHitTimer(double second) {
+        hitTimer = Math.max(0, hitTimer - second);
+        isHit = hitTimer > 0;
+        updateVisualState();
+    }
+
 	public void updateVisualState() {
 		if(isHit) {
 			this.body.setFill(Color.RED);

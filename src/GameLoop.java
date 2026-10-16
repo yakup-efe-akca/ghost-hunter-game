@@ -282,6 +282,7 @@ public class GameLoop extends Application {
 					
 				}
 				h1.updateEyeTimer(second);
+                h1.updateHitTimer(second);
 				h1.mouseCordinate(mouseX, mouseY);
 				
 				if(tokenTimer>=5) {
@@ -377,7 +378,7 @@ public class GameLoop extends Application {
 					    else if (currentEnemy instanceof Ripper) {
 					        enemyDamage = config1.map.get("ripper_damage"); 
 					    }
-					    h1.health -= enemyDamage * second;
+					    h1.takeDamage(enemyDamage * second);
 					}
 
 					hud.updateHealthBar(h1.health, h1.maxHealth);
